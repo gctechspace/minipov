@@ -84,7 +84,7 @@ B8(00000000),
 };
 
 // special pointer for reading from ROM memory
-PGM_P largeimage_p PROGMEM = large_image;
+PGM_P const largeimage_p PROGMEM = large_image;
 
 #define NUM_ELEM(x) (sizeof (x) / sizeof (*(x)))
 int imagesize = NUM_ELEM(large_image);
